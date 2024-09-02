@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+</head>
+<style>
+    /* .box:first-child{
+        background-color: red;
+    }
+    .box:first-child:first-line{
+        color: yellow;
+    } */
+     /* .boxes *{
+        color: blueviolet;
+        border: 3px dotted blue;
+     }
+
+     [data-color="primary"]{
+        padding: 25px;
+     } */
+
+      /* .box:nth-child(odd){
+        background-color: blue;
+      } */
+       /* .box:nth-last-child(3){
+        background-color: red;
+       } */
+
+        .boxes::before{
+            content: "Harry is good boy";
+        color: red;
+    }
+
+        .boxes::after{
+            content: "Harry is a bad boy";
+    color: blue;
+        }
+
+        .box::first-letter{
+            color: crimson;
+        }
+
+        ::selection{
+            color: green;
+            background-color: black;
+        }
+
+        input::placeholder{
+            text-decoration: line-through;
+        }
+</style>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repudiandae ad nam veniam, quasi cum maxime tenetur repellendus quibusdam dolores perferendis in culpa dolore iure!</div>
+        <input type="text" name="text" placeholder="enter ur name ">
+        <div class="box">hey i am a box </div>
+        <div class="box">hey i am a box </div>
+    </div>
+</body>
+</html>

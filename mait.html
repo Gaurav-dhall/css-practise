@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* i am learning flexbox */
+    .container{
+        width: 80vw;
+        height: 80vh;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:flex-end;
+        /* align-content: center; */
+        
+    }
+    .box{
+        border: 2px solid black;
+        width: 20vw;
+        height: 10vh;
+        
+    }
+</style>
+<body>
+   <div class="container">
+    <div class="box" style="font-size: 2em; order: 1;">1</div>
+    <div class="box" style="font-size: 2em; order: 4; flex-shrink: 3;">2</div>
+    <div class="box" style="font-size: 2em; order: 2;">4</div>
+    <div class="box" style="font-size: 2em; order: 3;">3</div>
+    <div class="box" style="font-size: 2em; order: 5;order: 3;">5</div>
+    <div class="box" style="font-size: 2em; order: 6;">6</div>
+    <div class="box" style="font-size: 2em; order: 7;">7</div>
+    <div class="box" style="font-size: 2em; order: 8;">8</div>
+    <div class="box" style="font-size: 2em; order: 9;">9</div>
+    <div class="box" style="font-size: 2em; order: 10;">10</div>
+    
+    
+    
+    
+
+   </div>
+   
+</body>
+</html>

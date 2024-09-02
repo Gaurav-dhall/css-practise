@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query: for responsive websites</title>
+</head>
+<style>
+    body{
+        background-color: red;;
+    }
+
+
+    .box{ 
+        margin: 30px;
+        height: 520px;
+        width: 500px;
+        background-color: yellow;
+    }
+
+    @media only screen and (min-width : 455px){
+    body{
+        background-color: blue;
+    }
+    
+    }
+</style>
+<body>
+    <div>hey i am a red body guy !!!!</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

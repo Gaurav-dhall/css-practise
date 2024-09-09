@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+</head>
+<style>
+    .gauri{
+
+        height: 30vh;
+        width: 30vw;
+        border: 2px solid red;
+        background-color: yellow;
+        position: relative;
+        left: 30vw;
+        top: 20vh;
+         animation-name: xyz;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-direction:alternate-reverse; 
+        animation-fill-mode: both;
+        /* animation-play-state: paused; */
+
+      
+      
+    }
+    @keyframes xyz{
+       from{transform: scale(1);
+             background-color:yellow}
+       to{transform: scale(1.5);
+        background-color: aqua;}
+    }
+
+</style>
+<body>
+    <div class="gauri">
+
+    </div>
+</body>
+</html>
